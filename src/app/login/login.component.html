@@ -1,0 +1,8 @@
+<div id="container" [formGroup]="form" class="p-5">
+  <h3 class="mb-3">Login</h3>
+  <span>Username:</span>
+  <input type="email" formControlName="username" placeholder="username" class="d-block mb-3">
+  <span>Password:</span>
+  <input type="password" formControlName="password" placeholder="password" class="d-block mb-3">
+  <button (click)="login()" [disabled]="!form.valid" class="d-block">Login</button>
+</div>
